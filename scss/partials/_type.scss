@@ -1,0 +1,94 @@
+// Headings
+// --------------------------------------------------
+
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6 {
+  margin: 0 0 $small-spacing;
+  line-height: $heading-line-height
+}
+
+h1,.h1 { font-size: 30px; }
+h2,.h2 { font-size: 21px; }
+h3,.h3 { font-size: 16px; }
+h4,.h4 { font-size: 14px; }
+h5,.h5 { font-size: 12px; }
+h6,.h6 { font-size: 11px; }
+
+
+a {
+  color: $blue;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: 0;
+    
+  }
+  &:focus{
+    text-decoration: none;
+  }
+}
+
+p{
+  margin: 0 0 $small-spacing;
+}
+
+// Body text
+// --------------------------------------------------
+
+small {
+  font-size: 90%;
+}
+
+blockquote {
+  margin: 0;
+}
+
+
+// Lists
+// --------------------------------------------------
+
+ul,
+ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ol ol,
+ul ol {
+  list-style-type: lower-roman;
+}
+
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+dd {
+  margin-left: 0;
+}
+
+
+// Code
+// --------------------------------------------------
+
+tt,
+code {
+  font-family: $mono-font;
+  font-size: 12px;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px $mono-font;
+}
+

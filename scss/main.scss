@@ -1,0 +1,30 @@
+
+/*
+* Sass Boilerplate v2.0
+* Copyright 2015, Biju Michael
+* https://github.com/Biju0119/sass-boilerplate-master
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*/
+
+
+// @import "bourbon"; //Uncomment if you are not using Prepross
+
+// Global requirements
+@import "partials/variables";
+@import "partials/mixins";
+
+// Basecoat
+@import "partials/normalize";
+@import "partials/base";
+@import "partials/type";
+@import "partials/forms";
+@import "partials/tables";
+@import "partials/effects";
+
+// Components
+@import "partials/buttons";
+
+// Custom Styles
+@import "partials/style";
+@import "partials/mediaqueries";

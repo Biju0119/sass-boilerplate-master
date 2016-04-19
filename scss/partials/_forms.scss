@@ -1,0 +1,123 @@
+// Base form controls
+//
+// Overrides for common inputs for easier styling.
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+label {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+// input[type="text"],
+// input[type="password"],
+// input[type="email"],
+// input[type="number"],
+// input[type="tel"],
+// input[type="url"],
+
+.form-control{
+  height: 38px;
+  padding: 7px 8px;
+  font-size: 13px;
+  color: #333;
+  vertical-align: middle;
+  background-color: #fff;
+  background-repeat: no-repeat; // Repeat and position set for form states (success, error, etc)
+  background-position: right center;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  display: block;
+  width: 100%;
+  transition: all ease .1s;
+  &.focus,
+  &:focus {
+    border-color: $blue;
+    box-shadow: 0 0 5px rgba(81, 167, 232, 0.5);
+  }
+}
+
+textarea{
+  resize:none;
+  height: auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: $small-spacing / 2;
+}
+
+// Inputs with contrast for easy light gray backgrounds against white.
+// input.class is needed here to increase specificity over input[…]
+input.input-contrast,
+.input-contrast {
+  background-color: #fafafa;
+
+  &:focus { background-color: #fff; }
+}
+
+// Custom styling for HTML5 validation bubbles (WebKit only)
+
+
+
+
+
+
+button,input[type="submit"]{
+  &:focus,
+  &.focus{
+    outline: 0;
+  }
+}
+
+input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus
+
+{
+   outline: 0; text-decoration: none; transition:all ease .5s;  
+}
+
+textarea:focus, select:focus
+
+{
+
+   text-decoration: none;transition:all ease .5s; outline: none;  border: 1px solid #f00;
+}
+
+
+textarea { 
+-webkit-appearance: none;}
+
+
+
+@mixin placeholder($color)
+{
+  ::-webkit-input-placeholder {
+   color: $color;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $color;  opacity: 1;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $color;   opacity: 1;
+}
+
+:-ms-input-placeholder {  
+   color: $color;  
+}
+}
+
+
+
+
